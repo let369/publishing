@@ -23,9 +23,9 @@ definitions:
             hst:relativecontentpath: ${1}
             hst:sitemapitemhandlerids: [trailing-slash]
             hst:componentconfigurationmappingvalues: ['hst:pages/article', 'hst:pages/guidepage',
-              'hst:pages/organisation']
+              'hst:pages/organisation', 'hst:pages/mtaform']
             hst:componentconfigurationmappingnames: ['publishing:article', 'publishing:guidepage',
-              'publishing:organisation']
+              'publishing:organisation', 'publishing:mtaform']
             /_index_:
               jcr:primaryType: hst:sitemapitem
               hst:relativecontentpath: ${parent}/index
@@ -285,6 +285,9 @@ definitions:
           /notification-banner:
             jcr:primaryType: hst:template
             hst:renderpath: webfile:/freemarker/common/notification-banner.ftl
+          /mta-main:
+            jcr:primaryType: hst:template
+            hst:renderpath: webfile:/freemarker/common/mta-main.ftl
         /hst:sitemenus:
           jcr:primaryType: hst:sitemenus
         /hst:sitemapitemhandlers:

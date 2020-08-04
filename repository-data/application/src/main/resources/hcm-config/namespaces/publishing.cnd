@@ -4,6 +4,7 @@
 <'hippostd'='http://www.onehippo.org/jcr/hippostd/nt/2.0'>
 <'hippostdpubwf'='http://www.onehippo.org/jcr/hippostdpubwf/nt/1.0'>
 <'hippotranslation'='http://www.onehippo.org/jcr/hippotranslation/nt/1.0'>
+<'hippotaxonomy'='http://www.hippoecm.org/hippotaxonomy/nt/1.2'>
 
 [publishing:ImageCard] > hippogallery:imageset, hippogallery:relaxed
 
@@ -42,13 +43,19 @@
 [publishing:mirror] > hippostd:relaxed, hippotranslation:translated, publishing:basedocument
   orderable
 
+[publishing:mtaForm] > hippostd:relaxed, hippostd:taggable, hippotaxonomy:classifiable, hippotranslation:translated, publishing:base
+  orderable
+
+[publishing:mtaform] > hippostd:relaxed, hippotranslation:translated, publishing:basedocument
+  orderable
+
+[publishing:notificationbanner] > hippostd:relaxed, hippotranslation:translated, publishing:basedocument
+  orderable
+
 [publishing:organisation] > hippostd:relaxed, hippotranslation:translated, publishing:base
   orderable
 
 [publishing:organisationlist] > hippostd:relaxed, hippotranslation:translated, publishing:basedocument
-  orderable
-
-[publishing:notificationbanner] > hippostd:relaxed, hippotranslation:translated, publishing:basedocument
   orderable
 
 [publishing:relateditems] > hippo:compound, hippostd:relaxed
